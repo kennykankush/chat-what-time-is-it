@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <html
+      xmlns:th="http://www.thymeleaf.org">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>
+            The current time is <span th:text="${currTime}"></span>
+        </h1>
+
+        <div th:if="${currHour le 12}">Good Morning</div>
+        <div th:if="${currHour gt 12}">Good Afternoon</div>
+
+
+
+        <script src="" async defer></script>
+    </body>
+</html>
